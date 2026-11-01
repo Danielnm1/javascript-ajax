@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="t5.css">
+  <script src="t5.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Restaurants</h1>
+
+    <p id="loading-message">Loading restaurants...</p>
+
+    <p id="error-message" role="alert"></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody id="restaurant-list"></tbody>
+    </table>
+
+    <dialog id="restaurant-dialog">
+      <button type="button" id="close-button">Close</button>
+
+      <div id="restaurant-details"></div>
+
+      <section id="menu-section">
+        <h3>Today's menu</h3>
+        <p id="menu-loading"></p>
+        <p id="menu-error" role="alert"></p>
+        <div id="menu-content"></div>
+      </section>
+    </dialog>
+  </main>
+</body>
+</html>
